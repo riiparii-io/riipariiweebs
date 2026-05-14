@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>riiparii_ Photography</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div id="searchBox" class="search-box">
+
+<input 
+type="text" 
+id="searchInput" 
+placeholder="Search"
+onkeyup="searchCatalog()"
+>
+
+<img src="https://i.ibb.co.com/Ndz4TD00/searchlogo.png" class="search-icon-inside">
+
+<div class="close-search" onclick="closeSearch()">✕</div>
+
+</div>
+
+<div class="menu-icon" onclick="toggleMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="logo">
+riiparii_
+</div>
+
+<div class="search-icon" onclick="openSearch()">
+<img src="https://i.ibb.co.com/Ndz4TD00/searchlogo.png">
+</div>
+
+</header>
+
+<!-- MENU OVERLAY -->
+<div id="menuOverlay" class="menu-overlay">
+
+<div class="menu-content">
+
+<div class="menu-header">
+<div class="close-menu" onclick="closeMenu()">✕</div>
+</div>
+
+<div class="menu-links">
+
+<a href="#about">About Me</a>
+<a href="#gallery">Gallery</a>
+<a href="catalog.pdf" download>Download PDF Catalog</a>
+
+</div>
+
+<div class="menu-footer">
+
+<h3>Contact Me</h3>
+
+<div class="menu-contact">
+
+<a href="mailto:emailkamu@gmail.com">
+<img src="https://i.ibb.co.com/HTHFLBGZ/gmaillogo.png">
+</a>
+
+<a href="https://instagram.com/usernamekamu">
+<img src="https://i.ibb.co.com/ynrsG2vK/instagramlogo.png">
+</a>
+
+</div>
+
+<p class="menu-copyright">
+© 2026 riiparii_
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Your Budget <br>
+Photographer
+</h1>
+
+<a href="https://forms.gle/e1d5AohUWbhSeL6X9" class="booking">
+BOOKING NOW
+</a>
+</div>
+
+</section>
+
+
+<section class="catalog">
+
+<h2>Catalog</h2>
+
+<div class="catalog-grid">
+
+<a href="catalog1.html" class="catalog-item">
+<img src="imgc1/p1.jpg">
+<p class="package">Single Session Cosplay (Reguler) </p>
+<h3>Rp.60.000</h3>
+</a>
+
+
+<a href="catalog2.html" class="catalog-item">
+<img src="imgc2/p1.jpg">
+<p class="package">Single Session Cosplay (Fast) </p>
+<h3>Rp.40.000</h3>
+</a>
+
+
+<a href="catalog3.html" class="catalog-item">
+<img src="imgc3/p1.jpg">
+<p class="package">Single Session Cosplay (Plus)</p>
+<h3>Rp.70.000</h3>
+</a>
+
+
+<a href="catalog4.html" class="catalog-item">
+<img src="imgc4/p1.jpg">
+<p class="package">Duo Session Cosplay </p>
+<h3>Rp.140.000</h3>
+</a>
+
+
+<a href="catalog5.html" class="catalog-item">
+<img src="imgc5/p1.jpg">
+<p class="package">Project Session Cosplay (3 person up) per person</p>
+<h3>Rp.60.000 per person</h3>
+</a>
+
+</div>
+
+</section>
+
+<section class="contact-home">
+
+<h2>Contact me</h2>
+
+<div class="contact-icons">
+
+<a href="mailto:emailkamu@gmail.com">
+<img src="https://i.ibb.co.com/HTHFLBGZ/gmaillogo.png">
+</a>
+
+<a href="https://instagram.com/usernamekamu">
+<img src="https://i.ibb.co.com/ynrsG2vK/instagramlogo.png">
+</a>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+<footer>
+
+<p>© 2026 riiparii_, All rights reserved.</p>
+
+</footer>
+
+<script>
+
+function openSearch(){
+document.getElementById("searchBox").style.display="flex";
+}
+
+function closeSearch(){
+document.getElementById("searchBox").style.display="none";
+document.getElementById("searchInput").value="";
+searchCatalog();
+}
+
+function searchCatalog(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+let items=document.querySelectorAll(".catalog-item");
+
+items.forEach(item=>{
+
+let text=item.innerText.toLowerCase();
+
+if(text.includes(input)){
+item.style.display="block";
+}else{
+item.style.display="none";
+}
+
+});
+
+}
+
+function openSearch(){
+document.getElementById("searchBox").style.display="flex";
+document.getElementById("searchInput").focus();
+}
+
+</script>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menuOverlay").style.display = "block";
+}
+
+function closeMenu(){
+document.getElementById("menuOverlay").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

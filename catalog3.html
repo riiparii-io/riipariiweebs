@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Single Session Cosplay (Plus)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Bahnschrift",sans-serif;
+background:#efefef;
+color:#111;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 25px;
+border-bottom:1px solid #ccc;
+background:white;
+}
+
+.logo{
+font-family:"Montserrat";
+font-size:24px;
+font-weight:700;
+}
+
+.menu-icon span{
+display:block;
+width:22px;
+height:2px;
+background:black;
+margin:5px 0;
+}
+
+.search-icon img{
+width:22px;
+}
+
+/* PRODUCT */
+
+.product{
+max-width:700px;
+margin:auto;
+padding:40px 20px;
+}
+
+.product-image{
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border:1px solid #aaa;
+}
+
+/* SLIDER */
+
+.slider-indicator{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+margin:15px 0;
+}
+
+.arrow{
+font-size:24px;
+cursor:pointer;
+}
+
+.counter{
+font-size:14px;
+}
+
+/* INFO */
+
+.brand{
+font-size:14px;
+color:#444;
+margin-top:10px;
+}
+
+.product-info h1{
+font-family:"Montserrat";
+font-size:32px;
+font-weight:500;
+margin:5px 0;
+}
+
+.product-info h2{
+font-family:"Montserrat";
+font-size:28px;
+font-weight:500;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+
+.booking-btn{
+width:100%;
+padding:14px;
+background:white;
+border:1px solid #888;
+cursor:pointer;
+font-family:"Bahnschrift";
+}
+
+/* DESCRIPTION */
+
+.description{
+max-width:700px;
+margin:auto;
+padding:30px 20px;
+border-top:1px solid #ccc;
+}
+
+.description h3{
+font-family:"Montserrat";
+margin-bottom:10px;
+}
+
+/* BENEFIT */
+
+.benefit{
+max-width:700px;
+margin:auto;
+padding:20px;
+border-top:1px solid #ccc;
+}
+
+.benefit h3{
+font-family:"Montserrat";
+margin-bottom:15px;
+}
+
+.benefit ul{
+padding-left:20px;
+}
+
+.benefit li{
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+max-width:700px;
+margin:auto;
+padding:40px 20px;
+text-align:center;
+border-top:1px solid #ccc;
+}
+
+.contact h2{
+font-family:"Montserrat";
+font-size:32px;
+}
+
+.back-btn{
+font-family:"Montserrat";
+font-size:16px;
+text-decoration:none;
+color:black;
+cursor:pointer;
+}
+
+.contact-icons{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:20px;
+}
+
+.contact-icons img{
+width:28px;
+height:auto;
+cursor:pointer;
+transition:0.2s;
+}
+
+.contact-icons img:hover{
+transform:scale(1.1);
+opacity:0.8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+font-size:12px;
+color:#444;
+}
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 25px;
+}
+
+.back-btn:hover{
+opacity:0.6;
+transition:0.2s;
+}
+
+/* IMAGE SLIDER */
+
+.catalog-image{
+width:350px;
+height:420px;
+margin:auto;
+border:1px solid #aaa;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+}
+
+.catalog-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.image-selector{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:30px;
+margin-top:15px;
+font-size:18px;
+font-family:"Montserrat";
+}
+
+.arrow{
+font-size:30px;
+cursor:pointer;
+user-select:none;
+transition:0.2s;
+}
+
+.arrow.disabled{
+opacity:0.3;
+cursor:default;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="menu-icon">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<div class="logo">
+riiparii_
+</div>
+
+<a href="index.html" class="back-btn">
+Back
+</a>
+
+</header>
+
+<section class="product">
+
+    <div class="catalog-image">
+<img id="catalogPhoto">
+</div>
+
+<div class="image-selector">
+
+<div id="prevBtn" class="arrow">&#10094;</div>
+
+<div id="photoCount">1/5</div>
+
+<div id="nextBtn" class="arrow">&#10095;</div>
+
+</div>
+
+<div class="product-info">
+
+<p class="brand">riiparii_</p>
+
+<h1>Single Session Cosplay (Plus)</h1>
+
+<h2>Rp.70.000</h2>
+
+<button class="booking-btn" onclick="window.open('https://forms.gle/rtGsipQx7m2oLWzs8')">
+BOOKING NOW
+</button>
+
+</div>
+
+</section>
+
+<section class="description">
+
+<h3>Description</h3>
+
+<p>
+Cocok buat kamu yang mau banyak hasli fotonya
+</p>
+
+</section>
+
+<section class="benefit">
+
+<h3>What to you get</h3>
+
+<ul>
+
+<li>40 minute photo session</li>
+<li>All photo edited (retouch) & 5 Edited effect</li>
+<li>Full RAW access</li>
+
+
+</ul>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact me</h2>
+
+<div class="contact-icons">
+
+<a href="mailto:emailkamu@gmail.com">
+<img src="img/gmaillogo.png" alt="email">
+</a>
+
+<a href="https://instagram.com/riiparii_" target="_blank">
+<img src="img/instagramlogo.png" alt="instagram">
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 riiparii_, All rights reserved.</p>
+
+</footer>
+
+=============== UBAH FOTO DISINI ==============================
+
+<script>
+
+const photos = [
+"https://i.ibb.co.com/PZdLRcFg/p1.jpg",
+"https://i.ibb.co.com/k23yr25t/p2.jpg",
+"https://i.ibb.co.com/xKDzgc1F/p3.jpg",
+"https://i.ibb.co.com/0yxdvvMX/p4.jpg",
+"https://i.ibb.co.com/qM7g5GX4/p5.jpg",
+];
+
+let index = 0;
+
+const img = document.getElementById("catalogPhoto");
+const counter = document.getElementById("photoCount");
+const prev = document.getElementById("prevBtn");
+const next = document.getElementById("nextBtn");
+
+function updateGallery(){
+
+img.src = photos[index];
+counter.innerText = (index+1) + "/" + photos.length;
+
+prev.classList.toggle("disabled", index===0);
+next.classList.toggle("disabled", index===photos.length-1);
+
+}
+
+prev.onclick = () => {
+if(index>0){
+index--;
+updateGallery();
+}
+};
+
+next.onclick = () => {
+if(index<photos.length-1){
+index++;
+updateGallery();
+}
+};
+
+updateGallery();
+
+</script>
+
+</body>
+</html>
