@@ -50,7 +50,11 @@ align-items:center;
 
 .hero{
 height:420px;
-background:url("img/image.jpg") center/cover no-repeat;
+background-image:url("https://i.ibb.co.com/99dqFqdV/image.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
 display:flex;
 align-items:center;
 justify-content:center;
