@@ -49,17 +49,14 @@ align-items:center;
 /* HERO */
 
 .hero{
-.hero{
-min-height:420px;
-height:70vh;
-background:url("https://i.ibb.co.com/99dqFqdV/image.jpg") center center/cover no-repeat;
+height:420px;
+background:url("img/image.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 position:relative;
 text-align:center;
 color:white;
-overflow:hidden;
 }
 
 .hero::after{
