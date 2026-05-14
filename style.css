@@ -51,9 +51,12 @@ align-items:center;
 .hero{
 height:420px;
 background-image:url("https://i.ibb.co.com/99dqFqdV/image.jpg");
-background-size:cover;
+
+background-size:contain;
 background-position:center;
 background-repeat:no-repeat;
+
+background-color:#000;
 
 display:flex;
 align-items:center;
@@ -61,6 +64,7 @@ justify-content:center;
 position:relative;
 text-align:center;
 color:white;
+overflow:hidden;
 }
 
 .hero::after{
