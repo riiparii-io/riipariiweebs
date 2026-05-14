@@ -132,7 +132,7 @@ margin-bottom:20px;
 .catalog-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:24px;
+gap:16px;
 }
 .card img{
 width:100%;
@@ -274,7 +274,11 @@ cursor:pointer;
 .catalog-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
-gap:20px;
+gap:18px;
+
+border-radius:12px;
+overflow:hidden;
+background:white;
 }
 
 .catalog-item{
