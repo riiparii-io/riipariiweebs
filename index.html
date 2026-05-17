@@ -12,6 +12,31 @@
 
 </head>
 
+<!-- EVENT POPUP -->
+
+<div id="eventPopup" class="popup-overlay">
+
+<div class="popup-box">
+
+<button class="popup-close" onclick="closePopup()">✕</button>
+
+<img
+class="popup-poster"
+src="https://i.ibb.co.com/dw8KZtsd/Weekend-jadi-lebih-seru-bareng-Connext-Japan-Djakarta-Ennichi-Nikmati-vibes-matsuri-di-taman-pu.jpg"
+>
+</a>
+
+<div class="popup-info">
+<h2>UPCOMING EVENT</h2>
+<p>
+Tap poster for more information.
+</p>
+</div>
+
+</div>
+
+</div>
+
 <body>
 
 <header class="navbar">
@@ -223,6 +248,30 @@ document.getElementById("menuOverlay").style.display = "block";
 
 function closeMenu(){
 document.getElementById("menuOverlay").style.display = "none";
+}
+
+</script>
+
+<script>
+
+function closePopup(){
+document.getElementById("eventPopup").style.display = "none";
+}
+
+window.onload = function(){
+
+if(!sessionStorage.getItem("popupShown")){
+
+document.getElementById("eventPopup").style.display = "flex";
+
+sessionStorage.setItem("popupShown", "true");
+
+}else{
+
+document.getElementById("eventPopup").style.display = "none";
+
+}
+
 }
 
 </script>
